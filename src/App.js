@@ -12,13 +12,19 @@ const pets = [
   { id: 2, name: "Lucy", image: "https://emborapets.com/wp-content/uploads/2020/08/Why-Does-My-Springer-Spaniel-Smell-So-Bad_.jpg"}
 ]
 
+const petArr = pets.map((petObj) => {
+  return <PetCard name={petObj.name} />
+})
+
+
 function App() {
   return (
     <div>
       <Header />
       <main>
-        <PetCard name={pets[0].name} image={pets[0].image} />
-        <PetCard name={pets[1].name} image={pets[1].image} />
+        {/* <PetCard name={pets[0].name} image={pets[0].image} />
+        <PetCard name={pets[1].name} image={pets[1].image} /> */}
+        {petArr}
       </main>
     </div>
   );
