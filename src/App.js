@@ -13,7 +13,7 @@ const pets = [
 ]
 
 const petArr = pets.map((petObj) => {
-  return <PetCard name={petObj.name} image={petObj.image} />
+  return <PetCard key={petObj.id} name={petObj.name} image={petObj.image} />
 })
 
 
