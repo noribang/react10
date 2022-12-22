@@ -1,6 +1,7 @@
 import React from 'react'
 
 function PetCard(props) {
+  console.log(props.snack)
   return (
     <div className="card">
       <h2>{props.name}</h2>
